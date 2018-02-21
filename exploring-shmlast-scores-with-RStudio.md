@@ -135,25 +135,22 @@ shmlast_out <- read.csv("data/mouse.1.rna.fna.gz.x.cow.faa.crbl.csv")
 
 Now we can take a look at the data in a slightly nicer way!
 
-@CTB as with ... This is called a dataframe, which is a sort of R-ish version of a
-spreadsheet with named columns. Use the `head()` command to take a
+As with
+[visualizing BLAST scores](visualizing-blast-scores-with-RStudio.md),
+this is now a dataframe.  Use the `head()` command to take a
 look at the beginning of it all:
 
 ```
 head(shmlast_out)
 ```
 
-this is a generic R command that acts very much like the UNIX command
-line `head` command but gives you a slightly nicer more structured view.
-In RStudio you can also use the `view` command,
+and View to get a nice view in RStudio:
 
 ```
 View(shmlast_out)
 ```
-which is much nicer altogether!
 
-Another useful command is `dim` which will tell you the DIMENSIONS of this
-data frame:
+Run dim as before:
 
 ```
 dim(shmlast_out)
@@ -161,7 +158,7 @@ dim(shmlast_out)
 
 That's a big data frame! 132,900 rows (and 17 columns!)
 
-Let's do some data visualization to get a handle on what our blast output looked like: first, let's look at the `E_scaled` column.
+Hist, as before:
 
 ```
 hist(shmlast_out$E_scaled)
