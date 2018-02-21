@@ -1,0 +1,30 @@
+---
+title: "blast interp"
+author: "titus"
+date: "2/21/2018"
+output: html_document
+---
+
+## Required Packages
+
+
+```{r}
+# install stuff here
+```
+
+## Data
+
+Commentary goes here!
+
+```{r}
+blast_out <- read.table('mm-second.x.zebrafish.tsv', sep='\t')
+colnames(blast_out) <- c("qseqid", "sseqid", "pident", "length", "mismatch", "gapopen", "qstart", "qend", "sstart", "send", "evalue", "bitscore")
+
+```
+
+## Plot things
+
+```{r, message=FALSE, echo=FALSE, cache=TRUE}
+hist(blast_out$evalue)
+
+```
