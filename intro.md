@@ -2,6 +2,8 @@
 
 C. Titus Brown, ctbrown@ucdavis.edu
 
+(This event [was recorded](https://youtu.be/Rx4kqq87it0))
+
 ## Front matter
 
 Please adhere to the [Carpentries Code of Conduct](https://docs.carpentries.org/topic_folders/policies/code-of-conduct.html). Two key points:
